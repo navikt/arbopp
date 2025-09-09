@@ -1,0 +1,8 @@
+.tildeling-veileder-statusinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tildeling-veileder-statusinfo:not(:last-of-type) {
+    margin-bottom: 1rem;
+}

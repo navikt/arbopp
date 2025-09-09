@@ -1,0 +1,954 @@
+/* Override CopyButton label color in Fnr cell to use correct Aksel token in both light and dark mode */
+/* Ensure CopyButton label always uses correct color in all table cells */
+.veilarbportefoljeflatefs .navds-copybutton__label {
+    color: var(--ax-text-default) !important;
+}
+.veilarbportefoljeflatefs .lenke--frittstaende {
+    color: var(--ax-text-subtle);
+}
+
+.veilarbportefoljeflatefs .lenke--frittstaende:hover {
+    color: var(--ax-text-subtle);
+}
+
+/* Marker valgt header med aksentfarge */
+.veilarbportefoljeflatefs .valgt,
+.veilarbportefoljeflatefs .valgt-sortering {
+    color: var(--ax-text-accent);
+}
+.veilarbportefoljeflatefs {
+    /* Styrer paddinga for innhaldet på sida
+     * og gjer det mogleg å strekke bakgrunnsfargen til ting heilt ut til kanten av sida.
+     * Howto: margin-left: -x, padding-left: x; og forelders padding-left: x */
+    --side-padding-x-akse: 3rem;
+    --sidebar-bredde: 22rem;
+    --gap-mellom-sidebar-og-sokefeltkolonner: 0.8rem;
+}
+
+.veilarbportefoljeflatefs .ord-brekk {
+    hyphens: auto;
+    word-break: break-word;
+}
+
+.veilarbportefoljeflatefs .ord-brekk-alle {
+    hyphens: auto;
+    word-break: break-all;
+}
+
+.veilarbportefoljeflatefs .juster-tekst-venstre {
+    text-align: left;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--ax-text-default);
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    background-color: var(--ax-bg-default);
+
+    filter: none;
+
+    /* Remove the margin in all browsers. (From normalize.css) */
+    margin: 0;
+}
+
+@media print {
+    body a[href]:after {
+        content: none !important;
+    }
+}
+
+
+body.annen-veileder {
+    background-color: var(--ax-surface-info);
+}
+
+html {
+    height: 100%;
+
+    font-size: 100%;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    color: var(--ax-text-default);
+    background-color: var(--ax-bg-default);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    /* Correct the line height in all browsers. (From normalize.css) */
+    line-height: 1.15;
+}
+
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*
+-------------
+CLEARFIX
+-------------
+*/
+/* stylelint-disable */
+/* stylelint-enable */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Sections
+   ========================================================================== */
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+    color: var(--ax-text-default);
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+    font-family: monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+    background-color: transparent;
+    color: var(--ax-text-action);
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+    font-family: monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type='checkbox'],
+[type='radio'] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+    display: none;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+    *,
+    *::before,
+    *::after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: ' (' attr(href) ')';
+    }
+
+    abbr[title]::after {
+        content: ' (' attr(title) ')';
+    }
+
+    a[href^='#']::after,
+    a[href^='javascript:']::after {
+        content: '';
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+
+    /* Remove the border on images inside links in IE 10. (From normalize.css)*/
+    border-style: none;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-rounded {
+    border-radius: 6px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+[role='button'] {
+    cursor: pointer;
+}
+
+body .clearfix::before,
+body .clearfix::after {
+    content: ' ';
+    display: table;
+}
+
+body .clearfix::after {
+    clear: both;
+}
+
+body .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body .pull-right {
+    float: right !important;
+}
+
+body .pull-left {
+    float: left !important;
+}
+
+body .hide {
+    display: none !important;
+}
+
+body .show {
+    display: block !important;
+}
+
+body .hidden {
+    display: none !important;
+}
+
+body .invisible {
+    visibility: hidden;
+}
+
+body .text-hide {
+    font: 0px/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+}
+
+body .liste-uten-listepunkt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none !important;
+    }
+}
+
+/*
+--------------
+GRID
+--------------
+*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container::before,
+.container::after {
+    content: ' ';
+    display: table;
+}
+
+.container::after {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 736px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 956px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1156px;
+    }
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+    content: ' ';
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
+
+.col-break-word {
+    word-break: break-word; /* Knekk ord i to om dei elles ville gjeve overflow.*/
+}
+
+.col-xs-2,
+.col-xs-2-5,
+.col-xs-3 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+    color: var(--ax-text-default);
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-xs-2-5 {
+    width: 20%;
+}
+
+.col-xs-2 {
+    width: 16.66666667%;
+}
+
+.col,
+.row,
+.container,
+.container-fluid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ReactCollapse--collapse {
+    transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.begrensetbredde {
+    max-width: 35rem;
+}
+
+.text-hide {
+    position: absolute;
+}
+
+.veilarbportefoljeflatefs .dekorator {
+    .dr-flex.dr-min-w-min.dr-items-center.dr-float-left {
+    font-weight: var(--ax-font-weight-bold);
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--center {
+    align-items: center;
+}
+
+.text--left {
+    text-align: left !important;
+}
+
+.toolbar-container {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: calc(var(--sidebar-bredde) + var(--gap-mellom-sidebar-og-sokefeltkolonner)) auto;
+    grid-template-rows: auto auto auto auto;
+    z-index: 3;
+    background-color: var(--ax-bg-default);
+    box-shadow: none;
+}
+
+.toolbar-container .tabellinfo {
+    display: grid;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: 40% 60%;
+    margin-top: 0.75rem;
+}
+
+.toolbar-container .tabellinfo__hidden {
+    grid-column-start: 2;
+}
+
+.toolbar-container .tabellinfo .tabelloverskrift {
+    background-color: var(--ax-bg-subtle);
+    grid-column: 1;
+}
+
+.toolbar-container .toolbar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    margin-top: 0.5rem;
+}
+
+.toolbar-container .brukerliste__header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4;
+    z-index: 1;
+    background-color: var(--ax-bg-subtle);
+    box-shadow: inset 0 -1px var(--ax-gray-700);
+}
+
+
+/* Utility class to add shadow only when scrolled */
+.toolbar-container.toolbar-container--scrolled {
+    box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.skjemaelement {
+    margin-bottom: 0.5rem;
+}
+
+.veilarbportefoljeflatefs .side-storrelse {
+    margin: 0 auto;
+    padding: 0 var(--side-padding-x-akse);
+    max-width: 1809px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.veilarbportefoljeflatefs .side-storrelse > .informasjonsmeldinger:not(:last-child) {
+    margin-bottom: var(--ax-spacing-1);
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold {
+    display: grid;
+    column-gap: var(--gap-mellom-sidebar-og-sokefeltkolonner);
+    grid-template-columns: var(--sidebar-bredde) auto;
+    grid-template-rows: auto auto auto;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .annen-veileder-varsel {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+    margin: 0;
+    font-weight: bolder;
+    padding-right: 1rem;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .alertstripe__annen-veileder-varsel {
+    align-self: center;
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 80%;
+    justify-self: flex-end;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .sokefelt-knapp__container {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .sidebar {
+    grid-row-start: 1;
+    grid-column: 1;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .filtrering-label-container,
+.veilarbportefoljeflatefs .oversikt-sideinnhold .filtrering-label-container__annen-veileder {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .filtrering-label-container__feature,
+.veilarbportefoljeflatefs .oversikt-sideinnhold .filtrering-label-container__annen-veileder__feature {
+    background-color: var(--ax-surface-info);
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .oversikt__container {
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0 0 2rem;
+    background-color: var(--ax-bg-default);
+    color: var(--ax-text-default);
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold .alertstripe__filtrering {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold__hidden .oversikt__container {
+    grid-column-start: 1;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold__hidden .filtrering-label-container {
+    grid-column-start: 1;
+}
+
+.veilarbportefoljeflatefs .oversikt-sideinnhold__hidden .alertstripe__filtrering {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.veilarbportefoljeflatefs .registrering-alert {
+    margin: 4px 8px 4px 12px;
+}
+
+
+.veilarbportefoljeflatefs .ax-alert__wrapper {
+    font-size: 0.875rem !important;
+}
+
+.veilarbportefoljeflatefs .ax-body-short {
+    font-size: 0.875rem !important;
+}
+
+.veilarbportefoljeflatefs .skjemaelement__label {
+    font-size: 0.875rem !important;
+}
+
+.veilarbportefoljeflatefs .ax-label {
+    font-size: 0.875rem !important;
+}
+
+/* Gjer at tekst i dekoratøren i oversikten får same storleik som på andre sider*/
+.veilarbportefoljeflatefs .dekorator .ax-body-short {
+    font-size: initial !important;
+}
+
+/* Gjer at tekst i dekoratøren i oversikten får same storleik som på andre sider*/
+.veilarbportefoljeflatefs .dekorator .ax-label {
+    font-size: initial !important;
+}
+
+@media (max-width: 1200px) {
+    .veilarbportefoljeflatefs .oversikt-sideinnhold .oversikt__container {
+        grid-column-start: 1;
+    }
+
+    .veilarbportefoljeflatefs .oversikt-sideinnhold .sidebar {
+        z-index: 1200;
+    }
+}
+
+
+.veilarbportefoljeflatefs .ax-button--secondary,
+.veilarbportefoljeflatefs .ax-button--secondary-neutral {
+    /* Gjer at secondary-knappar vert kvite uavhengig av bakgrunnsfargen. */
+    background-color: var(--ax-bg-default);
+}
+
+.veilarbportefoljeflatefs .dekorator .ax-button--secondary,
+.veilarbportefoljeflatefs .dekorator .ax-button--secondary-neutral {
+    background-color: initial;
+}
+
+.veilarbportefoljeflatefs .lenke--frittstaende {
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.veilarbportefoljeflatefs .lenke--frittstaende:hover {
+    box-shadow: none;
+}

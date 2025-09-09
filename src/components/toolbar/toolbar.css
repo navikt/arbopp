@@ -1,0 +1,223 @@
+.veilarbportefoljeflatefs .dropdown {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.veilarbportefoljeflatefs .dropdown__btnwrapper {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.veilarbportefoljeflatefs .dropdown__btnwrapper:before {
+    pointer-events: none;
+    content: '';
+    background: currentColor;
+    height: 2px;
+    width: 10px;
+    border-radius: 10px;
+    right: 0.75rem;
+    top: 1.3rem;
+    position: absolute;
+    transition: transform 0.2s;
+    transform: translateX(3px) rotate(-45deg);
+}
+.veilarbportefoljeflatefs .dropdown__btnwrapper:after {
+    pointer-events: none;
+    content: '';
+    background: currentColor;
+    height: 2px;
+    width: 10px;
+    border-radius: 10px;
+    right: 0.75rem;
+    top: 1.3rem;
+    position: absolute;
+    transition: transform 0.2s;
+    transform: translateX(-3px) rotate(45deg);
+}
+.veilarbportefoljeflatefs .dropdown__btnwrapper--disabled {
+    color: #c9c9c9;
+}
+.veilarbportefoljeflatefs .velg-kolonner-dropdown {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--ax-bg-default);
+    border: 1px solid #6a6a6a;
+    border-radius: 2px;
+    color: #000000;
+}
+.veilarbportefoljeflatefs .dropdown__btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #00347d;
+}
+.veilarbportefoljeflatefs .dropdown__btn:disabled {
+    color: #c9c9c9;
+}
+.veilarbportefoljeflatefs .dropdown__innhold {
+    position: absolute;
+    z-index: 2000;
+    border: 1px solid #a0a0a0;
+    top: calc(100% - 1px);
+    background-color: var(--ax-bg-default);
+    border-radius: 0 0 2px 2px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.veilarbportefoljeflatefs .dropdown .hoyre {
+    margin-left: -30%;
+}
+.veilarbportefoljeflatefs .dropdown:hover .dropdown__btn,
+.veilarbportefoljeflatefs .dropdown:hover .dropdown__innhold {
+    border-color: #0067c5;
+}
+.veilarbportefoljeflatefs .dropdown--apen {
+    margin-bottom: -0.05rem;
+    border-bottom: none;
+}
+.veilarbportefoljeflatefs .dropdown--apen .dropdown__btnwrapper:before {
+    pointer-events: none;
+    content: '';
+    background: currentColor;
+    height: 2px;
+    width: 10px;
+    border-radius: 10px;
+    right: 0.75rem;
+    top: 1.3rem;
+    position: absolute;
+    transition: transform 0.2s;
+    transform: translateX(3px) rotate(45deg);
+    z-index: 2000;
+}
+.veilarbportefoljeflatefs .dropdown--apen .dropdown__btnwrapper:after {
+    pointer-events: none;
+    content: '';
+    background: currentColor;
+    height: 2px;
+    width: 10px;
+    border-radius: 10px;
+    right: 0.75rem;
+    top: 1.3rem;
+    position: absolute;
+    transition: transform 0.2s;
+    transform: translateX(-3px) rotate(-45deg);
+    z-index: 2000;
+}
+.veilarbportefoljeflatefs .dropdown--apen .dropdown__btn {
+    position: relative;
+    z-index: 120;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+}
+.veilarbportefoljeflatefs .dropdown .knapperad {
+    padding: 0;
+}
+.veilarbportefoljeflatefs .visuallyhidden {
+    position: absolute;
+    left: -1000000000px;
+}
+.veilarbportefoljeflatefs #veilederside-toolbar {
+    padding-left: 0;
+    margin-bottom: 0;
+    position: sticky;
+    top: 0;
+    border: none;
+    background-color: var(--ax-bg-subtle);
+    justify-content: space-between;
+    min-height: var(--veilederside-toolbar-height);
+    max-height: fit-content;
+}
+.veilarbportefoljeflatefs .toolbar {
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 2.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: none;
+}
+.veilarbportefoljeflatefs .toolbar__element {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper {
+    margin-right: 0.5rem;
+}
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper {
+    width: 186px;
+}
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .sokfilter .skjemaelement,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper .toolbarknapp-input .sokfilter .skjemaelement {
+    margin-bottom: 0;
+}
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .checkbox-filterform,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper .toolbarknapp-input .checkbox-filterform,
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .radio-filterform,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper .toolbarknapp-input .radio-filterform {
+    position: absolute;
+    z-index: 2000;
+    background-color: var(--ax-bg-default);
+    border: 1px solid #a0a0a0;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    width: 190px;
+    margin-right: 0.5rem;
+}
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .checkbox-filterform__valg,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper .toolbarknapp-input .checkbox-filterform__valg,
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .radio-filterform__valg,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper .toolbarknapp-input .radio-filterform__valg {
+    margin: 0;
+    overflow-x: auto;
+    max-height: 15.5rem;
+    padding-left: 0.2rem;
+    padding-top: 0.2rem;
+}
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .checkbox-filterform__valg .skjemaelement,
+.veilarbportefoljeflatefs
+    .toolbar
+    .tildel-veileder-wrapper
+    .toolbarknapp-input
+    .checkbox-filterform__valg
+    .skjemaelement,
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .radio-filterform__valg .skjemaelement,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper .toolbarknapp-input .radio-filterform__valg .skjemaelement {
+    margin-bottom: 0.5rem;
+}
+.veilarbportefoljeflatefs .toolbar .sok-veileder-wrapper .toolbarknapp-input .alertstripe,
+.veilarbportefoljeflatefs .toolbar .tildel-veileder-wrapper .toolbarknapp-input .alertstripe {
+    padding: 1rem 0.7rem;
+    z-index: 2000;
+    position: absolute;
+}
+.veilarbportefoljeflatefs .toolbar_btn {
+    height: 2.5rem;
+    color: var(--ax-text-action);
+}
+.veilarbportefoljeflatefs .toolbar_btn:hover {
+    color: var(--ax-text-action-hover);
+}
+.veilarbportefoljeflatefs .toolbar_btn:active {
+    color: var(--ax-text-on-action);
+}
+.veilarbportefoljeflatefs .toolbar_btn span {
+    font-weight: normal;
+}
+.veilarbportefoljeflatefs .brukerfeilmelding {
+    grid-column: 1/3;
+    grid-row: 3;
+    display: flex;
+    align-items: baseline;
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+.velg-kolonner__lukk-knapp {
+    width: fit-content;
+    align-self: end;
+}

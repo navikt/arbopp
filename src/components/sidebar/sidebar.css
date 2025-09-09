@@ -1,0 +1,97 @@
+.veilarbportefoljeflatefs .sidebar__tab-container [role="tab"] > span {
+    font-size: 14px !important;
+}
+.veilarbportefoljeflatefs .sidebar {
+    height: fit-content;
+    width: 100%;
+    position: sticky;
+    top: 0.5rem;
+    z-index: 4;
+    box-shadow: var(--ax-shadow-small);
+    background-color: var(--ax-bg-default);
+    margin-top: 0.5rem;
+}
+
+ .veilarbportefoljeflatefs .sidebar__tab-container {
+     flex-grow: 1;
+     display: flex;
+     justify-content: space-around;
+     background-color: var(--ax-bg-neutral-soft);
+     overflow-x: auto;
+     flex-wrap: nowrap;
+}
+
+ .veilarbportefoljeflatefs .sidebar__content-container {
+     height: fit-content;
+     z-index: 5;
+     background-color: var(--ax-bg-neutral-soft);
+     padding: 0.5rem;
+     position: absolute;
+     width: 100%;
+     box-shadow: var(--ax-shadow-small);
+}
+
+.veilarbportefoljeflatefs .sidebar__content-container .filtrering-filter__kolonne {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.veilarbportefoljeflatefs .sidebar__content-container .filtrering-filter,
+.veilarbportefoljeflatefs .sidebar__content-container .filtrering-oversikt,
+.veilarbportefoljeflatefs .sidebar__content-container .mine-filter__valgfelt,
+.veilarbportefoljeflatefs .sidebar__content-container .veileder-gruppe__valgfelt {
+    height: auto;
+    overflow-y: auto;
+    padding: 0.5rem 0.5rem 0;
+    max-height: 70vh;
+}
+
+.veilarbportefoljeflatefs .sidebar__content-container .sidebar-header {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.veilarbportefoljeflatefs .sidebar__content-container .sidebar-header .sidebar-header__tekst {
+    margin-right: auto;
+}
+
+@media (max-height: 1250px) {
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-filter,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-oversikt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .mine-filter__valgfelt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .veileder-gruppe__valgfelt {
+        max-height: 75vh;
+    }
+}
+
+@media (max-height: 1100px) {
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-filter,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-oversikt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .mine-filter__valgfelt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .veileder-gruppe__valgfelt {
+        max-height: 71vh;
+    }
+}
+
+@media (max-height: 870px) {
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-filter,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-oversikt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .mine-filter__valgfelt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .veileder-gruppe__valgfelt {
+        max-height: 60vh;
+    }
+}
+
+@media (max-height: 640px) {
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-filter,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .filtrering-oversikt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .mine-filter__valgfelt,
+    .veilarbportefoljeflatefs .sidebar .sidebar__content-container .veileder-gruppe__valgfelt {
+        max-height: 50vh;
+    }
+}

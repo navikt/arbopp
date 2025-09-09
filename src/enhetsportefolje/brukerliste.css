@@ -1,0 +1,112 @@
+.veilarbportefoljeflatefs .brukerliste {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.veilarbportefoljeflatefs .brukerliste li.brukerliste_rad:nth-child(odd) {
+    background-color: var(--ax-bg-default);
+}
+
+.veilarbportefoljeflatefs .brukerliste li.brukerliste_rad {
+    border-left: 1px solid #6a6a6a;
+    border-right: 1px solid #6a6a6a;
+    border-top: 1px solid #a0a0a0;
+}
+
+.veilarbportefoljeflatefs .brukerliste li.brukerliste_rad:first-child {
+    border-top: none;
+}
+
+.veilarbportefoljeflatefs .brukerliste li.brukerliste_rad:last-child {
+    border-bottom: 1px solid #a0a0a0;
+    border-radius: 0 0 var(--ax-border-radius-medium) var(--ax-border-radius-medium);
+}
+
+.veilarbportefoljeflatefs .brukerliste__element {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.veilarbportefoljeflatefs .velgalle-checkboks {
+    margin-right: 0.5rem;
+    margin-left: calc(1rem + 1px);
+}
+
+.veilarbportefoljeflatefs .brukerliste--borders {
+    border-top: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.veilarbportefoljeflatefs .brukerliste--border-bottom {
+    border-bottom: 2px solid #a0a0a0;
+}
+
+.veilarbportefoljeflatefs .brukerliste--forrigeBruker {
+    box-shadow:
+        inset -1px 0 0 2px #6a6a6a,
+        inset 1px 0 0 2px #a0a0a0;
+}
+
+.veilarbportefoljeflatefs .brukerliste__overskriftheader {
+    display: flex;
+    font-weight: bold;
+    font-size: 1rem;
+    min-height: 2rem;
+    padding: 5px 0;
+}
+
+.veilarbportefoljeflatefs .brukerliste__sorteringheader {
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    padding: 0 0 0.5rem;
+}
+
+.veilarbportefoljeflatefs .brukerliste__innhold {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.veilarbportefoljeflatefs .brukerliste__innhold .knapp-uten-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.veilarbportefoljeflatefs .brukerliste__gutter-right {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    width: 4rem;
+    gap: 0.2rem;
+}
+
+.veilarbportefoljeflatefs .brukerliste__etiketter {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.veilarbportefoljeflatefs .valgt-sortering {
+    font-weight: bold;
+}
+
+.veilarbportefoljeflatefs .enhet-tabell {
+    background-color: var(--ax-bg-subtle);
+    border-top-color: var(--ax-bg-default);
+    border-bottom: none;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1400px) {
+    .veilarbportefoljeflatefs .brukerliste__etiketter {
+        flex-direction: column;
+    }
+
+    .veilarbportefoljeflatefs .brukerliste__etiketter .navds-tag {
+        width: fit-content;
+    }
+}

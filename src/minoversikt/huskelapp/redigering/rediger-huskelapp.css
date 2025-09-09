@@ -1,0 +1,85 @@
+
+.rediger-huskelapp-modal .ax-body-short,
+.rediger-huskelapp-modal .ax-alert__wrapper {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.rediger-huskelapp-modal {
+    min-width: fit-content;
+}
+
+.rediger-huskelapp-modal-header {
+    display: flex;
+    align-items: center;
+}
+
+.rediger-huskelapp-modal-header .rediger-huskelapp-modal-header-ikon svg {
+    width: 1.5rem;
+    height: 24px;
+    margin-right: 0.3rem;
+}
+
+.rediger-huskelapp-modal-personinfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.5rem;
+    row-gap: 0.1rem;
+}
+
+.rediger-huskelapp-modal-personinfo .rediger-huskelapp-modal-header-copybutton,
+.rediger-huskelapp-modal-personinfo .rediger-huskelapp-modal-header-copybutton .navds-copybutton__label {
+    color: var(--ax-text-default) !important;
+}
+
+.rediger-huskelapp-modal-header-tekst {
+    margin-left: 0.3rem;
+}
+
+.rediger-huskelapp-modal .rediger-huskelapp-modal__body {
+    padding-bottom: 0;
+    overflow: visible; /* Gjer at focus-stylinga ikkje vert kutta sjølv om padding-bottom er 0.*/
+}
+
+.rediger-huskelapp-modal .nav-datovelger__kalenderPortal {
+    transform: translateY(-116%);
+}
+
+.rediger-huskelapp-modal .rediger-huskelapp-modal-pil {
+    margin: auto;
+}
+
+.rediger-huskelapp-modal .ny-huskelapp {
+    flex-grow: 1;
+    max-width: 26rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: var(--ax-spacing-4);
+}
+
+.rediger-huskelapp-modal .ny-huskelapp-form {
+    background-color: var(--ax-bg-default);
+    padding: 1rem 0.5rem;
+}
+
+.rediger-huskelapp-modal .ny-huskelapp form > :not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.rediger-huskelapp-modal .rediger-huskelapp-modal__footer {
+    align-items: flex-end; /* Dyttar knappane til botnen når slettebekreftinga er synleg */
+}
+
+.veilarbportefoljeflatefs .ny-huskelapp-form .navds-label {
+    /* !important er brukt for å overskrive hardkodinga av alle labels til 0.875rem i style.css */
+    font-size: var(--ax-font-size-medium) !important;
+}
+
+.rediger-huskelapp-modal.fiks-for-gammel-datovelger {
+    /* Fiks som gjer heile datovelgaren synleg sjølv om han flyt ut over grensene til foreldremodalen. */
+    /* Denne kan fjernast når vi ikkje bruker Datepicker frå nav-datovelger meir */
+    overflow: visible;
+}

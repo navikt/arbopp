@@ -1,0 +1,53 @@
+.veilarbportefoljeflatefs .sidebar__content-container .mine-filter__valgfelt {
+    padding: 0.5rem;
+}
+.veilarbportefoljeflatefs .sidebar__content-container .mine-filter__valgfelt .mine-filter__rad {
+    margin-bottom: 5px;
+}
+.veilarbportefoljeflatefs .mine-filter-wrapper__tekst {
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+.veilarbportefoljeflatefs .mine-filter-emptystate {
+    text-align: left;
+}
+.veilarbportefoljeflatefs .mine-filter-emptystate__tekst {
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+.veilarbportefoljeflatefs .mine-filter__valgfelt .skjemaelement__label {
+    word-break: break-word;
+}
+.veilarbportefoljeflatefs .mine-filter__rad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.veilarbportefoljeflatefs .mine-filter__filternavn {
+    width: 85%;
+}
+.veilarbportefoljeflatefs .mine-filter_alertstripe {
+    display: flex;
+    justify-content: space-between;
+}
+.veilarbportefoljeflatefs .mine-filter_alertstripe .alertstripe_lukknapp {
+    height: 24px;
+    width: 24px;
+    border: none;
+}
+.veilarbportefoljeflatefs .mine-filter_alertstripe .alertstripe__tekst {
+    display: flex;
+    justify-content: space-between;
+}
+.veilarbportefoljeflatefs .mine-filter_alertstripe.filter-med-arbeidsliste-alert h3.filter-med-arbeidsliste-heading {
+    font-size: 1rem;
+}
+
+.veilarbportefoljeflatefs .mine-filter_alertstripe.filter-med-arbeidsliste-alert h4.filter-med-arbeidsliste-heading {
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+.veilarbportefoljeflatefs .mine-filter_alertstripe.filter-med-arbeidsliste-alert .filter-med-arbeidsliste-list * {
+    margin-top: 0;
+    margin-bottom: 0;
+}

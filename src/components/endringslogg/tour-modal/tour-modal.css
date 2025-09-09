@@ -1,0 +1,50 @@
+.tour-modal {
+    padding: 0 !important;
+    background-color: var(--a-bg-default);
+    min-width: 33.25rem;
+    max-width: 33.25rem;
+    border-radius: 6px;
+}
+
+.tour-modal.lukknapp {
+    top: 1.25rem;
+    right: 1.5rem;
+}
+
+.tour-modal__main--bilde {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.tour-modal__main--bilde-wrapper {
+    box-shadow: 0 2px 5px rgba(120, 112, 106, 0.5);
+}
+
+.tour-modal__main--beskrivelse {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    min-height: 8rem;
+}
+
+.tour-modal__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'forrige stegviser neste';
+    justify-items: center;
+}
+
+.tour-modal__footer > button:first-child {
+    grid-area: forrige;
+}
+.tour-modal__footer > .stegviser {
+    grid-area: stegviser;
+}
+.tour-modal__footer > button:last-child {
+    grid-area: neste;
+}
+
+.tour-modal__footer > button {
+    width: fit-content;
+}

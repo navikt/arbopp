@@ -1,0 +1,56 @@
+.veilarbportefoljeflatefs .sorteringheader {
+    display: grid;
+    grid-template-columns: fit-content(100%) auto;
+}
+.veilarbportefoljeflatefs .sorteringheader button span {
+    font-weight: normal;
+}
+.veilarbportefoljeflatefs .sorteringheader__pil {
+    width: 1rem;
+    height: 1rem;
+    grid-column: 2;
+    float: left;
+    align-self: center;
+    margin-left: 0.125rem;
+}
+
+.veilarbportefoljeflatefs .sorteringspil {
+    color: var(--a-icon-default);
+    width: 0.667em; /* Tilsvarer 1rem */
+}
+
+.veilarbportefoljeflatefs .huskelapp__sorteringsheader .sorteringspil {
+    margin-left: var(--a-spacing-1);
+}
+
+.veilarbportefoljeflatefs .tomt-arbeidslisteikon {
+    width: calc(19 / 16 * 1rem); /* 19px */
+    height: calc(19 / 16 * 1rem);
+    display: block;
+}
+
+.veilarbportefoljeflatefs .fnr-kolonne {
+    display: flex;
+    align-items: center;
+}
+
+.veilarbportefoljeflatefs .fnr-kolonne :first-child {
+    padding-left: 0;
+    color: var(--ax-text-default);
+    font-weight: normal;
+}
+
+.veilarbportefoljeflatefs .fnr-kolonne svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.veilarbportefoljeflatefs .brukerliste__brukerpanelknapp {
+    margin-left: auto; /* Dyttar brukerpanelknappen heilt ut til høgre av containaren. */
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    min-width: 2rem;
+    color: #262626;
+    border: none;
+}
