@@ -46,7 +46,7 @@
         "@navikt/ds-react": "^7.29.1",
         "@navikt/ds-tokens": "^7.29.1",
     "@navikt/navspa": "6.2.0",
-        "@reduxjs/toolkit": "2.3.0",
+        "@reduxjs/toolkit": "2.9.0",
         "@sanity/block-content-to-react": "^3.0.0",
         "babel-polyfill": "6.26.0",
         "browserslist": "4.25.0",
